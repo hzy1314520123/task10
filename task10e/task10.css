@@ -9,9 +9,7 @@ body a:hover{
 	text-decoration: none;
 	
 }
-input{
-	
-}
+
 
 /*客服热线*/
 header{
@@ -240,9 +238,6 @@ main{
 }
 
 /*表单第一部分*/
-form div{
-	float: left;
-}
 .choiceone{
 	margin-top: 2px;
 	padding-left: 10px;
@@ -265,52 +260,29 @@ form div{
 	padding: 15px;
 }
 .cpleft {
-	float: left;
 	position: relative;
-	font-size: 20px;
+	font-size: 18px;
 }
 
-.cpleft div{
-	float: left;
-}
-.cpleft span{
-	color: white;
-	font-size: 30px;
-	margin-top: 10px;
-	text-align: center;
-	line-height: 1px;
-	display: block;
-	height: 20px;
+.cpleft input[type=radio]+span{
+    height: 20px;
 	width: 20px;
 	border-radius: 50%;
 	border: solid 1px #CCCCCC;
+	margin:-4px 10px;
+    display: inline-block;
 }
-.cpleft span:{
-	background-color: #1277DC;
+.cpleft input[type=radio]:checked + span{
+	border: solid 7px #1277DC;
 	color: white;
 }
-.cpleftone{
+.cpleftml input{
+	margin-left: 14px;
+	margin-top: 16px;
+	opacity: 0;
 	position: absolute;
-	top: 5px;
-	left: 38px;
 }
-.cplefttwo{
-	position: absolute;
-	top: 5px;
-	left: 160px;
-}
-.cpleftthree{
-	position: absolute;
-	top: 5px;
-	left: 283px;
-}
-input:checked+span{
-	background-color: #1277DC;
-	color: white;
-}
-input{
-	opacity:1;
-}
+
 
 /*表单第一部分右边*/
 .cpright{
@@ -338,173 +310,14 @@ input{
 .cpright a{
 	color: white;
 }
-@media only screen and (max-width:401px ) {
-	.cpleftthree{
-		position: absolute;
-		top: 55px;
-		left: 37px;
+@media only screen and (min-width: 320px) and (max-width: 400px) {
+	form div{
+		width: 50%;
+		margin: 2rem 0;
+	}
+
 	}
 }
-
-
-
-
-
-
-
-/*表单第三部分*/
-.csthree span{
-	position: ;
-}
-.csthreeone{
-	position: absolute;
-	top: 5px;
-	left: 38px;
-}
-.csthreetwo{
-	position: absolute;
-	top: 5px;
-	left: 214px;
-}
-.csthreethree{
-	position: absolute;
-	top: 5px;
-	left: 392px;
-}
-.csthreefour{
-	position: absolute;
-	top: 5px;
-	left: 567px;
-}
-.csthreefive{
-	position: absolute;
-	top: 5px;
-	left: 743px;
-}
-@media only screen and (min-width: 320px) and (max-width: 385px) {
-	.csthreetwo{
-	position: absolute;
-	top: 55px;
-	left: 36px;
-}
-.csthreethree{
-	position: absolute;
-	top: 105px;
-	left: 36px;
-}
-.csthreefour{
-	position: absolute;
-	top: 155px;
-	left: 36px;
-}
-.csthreefive{
-	position: absolute;
-	top: 205px;
-	left: 36px;
-}
-}
-@media only screen and (min-width: 385px) and (max-width: 562px) {
-	.csthreetwo{
-	position: absolute;
-	top: 5px;
-	left: 214px;
-}
-.csthreethree{
-	position: absolute;
-	top: 55px;
-	left: 36px;
-}
-.csthreefour{
-	position: absolute;
-	top: 55px;
-	left: 214px;
-}
-.csthreefive{
-	position: absolute;
-	top: 105px;
-	left: 36px;
-}
-}
-@media only screen and (min-width: 562px) and (max-width: 738px) {
-.csthreetwo{
-	position: absolute;
-	top: 5px;
-	left: 214px;
-}
-.csthreethree{
-	position: absolute;
-	top: 5px;
-	left: px;
-}
-.csthreefour{
-	position: absolute;
-	top: 55px;
-	left: 36px;
-}
-.csthreefive{
-	position: absolute;
-	top: 55px;
-	left: 214px;
-}
-}
-@media only screen and (min-width: 738px) and (max-width: 913px) {
-.csthreefour{
-	position: absolute;
-	top: 5px;
-	left: 567px;
-}
-.csthreefive{
-	position: absolute;
-	top: 55px;
-	left: 36px;
-}
-}
-@media only screen and (min-width: 977px) and (max-width: 1135px) {
-	.csthreetwo{
-	position: absolute;
-	top: 5px;
-	left: 214px;
-}
-.csthreethree{
-	position: absolute;
-	top: 5px;
-	left: px;
-}
-.csthreefour{
-	position: absolute;
-	top: 55px;
-	left: 36px;
-}
-.csthreefive{
-	position: absolute;
-	top: 55px;
-	left: 214px;
-}
-}
-@media only screen and (min-width: 1135px) and (max-width: 1405px) {
-	.csthreefour{
-	position: absolute;
-	top: 5px;
-	left: 567px;
-}
-.csthreefive{
-	position: absolute;
-	top: 55px;
-	left: 36px;
-}
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -516,11 +329,17 @@ input{
 .cprighttwo{
 	margin-top: 51px;
 }
+#inputtwo,#inputthree{
+	margin-top: 15px;
+	margin-left: 14px;
+	opacity: 0;
+	position: absolute;
+}
 .inputone{
-	margin:0 5px;
+	margin: 0 5px;
 }
 form div {
-	margin-left: 50px;
+	margin-left: 20px;
 	line-height: 50px;
 	height: 50px;
 	float: left;
@@ -532,55 +351,27 @@ form div {
 .cstwo-part{
 	margin-top: 10px;
 }
-.cstwoone{
-	position: absolute;
-	top: 5px;
-	left: 38px;
-}
-.cstwotwo{
-	position: absolute;
-	top: 65px;
-	left: 38px;
-}
-@media only screen and (min-width: 339px) and (max-width: 704px) {
-	.cstwotwo{
-		position: absolute;
-		top: 116px;
-		left: 36px;
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+	form div{
+		width: 50%;
+		margin: 2rem 0;
+	}
+
 	}
 }
-@media only screen and (min-width: 320px) and (max-width: 339px) {
-	.cstwotwo{
-		position: absolute;
-		top: 215px;
-		left: 36px;
-	}
-}
-@media only screen and (min-width: 339px) and (max-width: 398px) {
-	.cstwotwo{
-		position: absolute;
-		top: 165px;
-		left: 36px;
-	}
-}
-
-
-
-
-
-
 
 
 
 
 /*下一步*/
+
 .next-step{
-	text-align: center;
 	width: 100%;
 	border: solid 1px #CCCCCC;
 	height: 287px;
 }
 .next-step div{
+	text-align: center;
 	border-radius:10px ;
 	color: white;
 	margin: 145px auto;
